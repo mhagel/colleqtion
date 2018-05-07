@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { AppComponent } from './app.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -21,9 +23,13 @@ import { AppComponent } from './app.component';
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase, 'colleqtion'),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [ AppComponent ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

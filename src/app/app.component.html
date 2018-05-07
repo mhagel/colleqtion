@@ -10,3 +10,9 @@
     <a target="_blank" href=""></a>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </li>
+</ul>
