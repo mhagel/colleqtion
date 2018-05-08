@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA6yC71jrZxx_J4WMX82vIC5Ua27Pd3ke0",
-    authDomain: "colleqtion-app.firebaseapp.com",
-    databaseURL: "https://colleqtion-app.firebaseio.com",
-    projectId: "colleqtion-app",
-    storageBucket: "",
-    messagingSenderId: "639540043403"
+    apiKey: 'AIzaSyA6yC71jrZxx_J4WMX82vIC5Ua27Pd3ke0',
+    authDomain: 'colleqtion-app.firebaseapp.com',
+    databaseURL: 'https://colleqtion-app.firebaseio.com',
+    projectId: 'colleqtion-app',
+    storageBucket: '',
+    messagingSenderId: '639540043403'
   }
 };
 
